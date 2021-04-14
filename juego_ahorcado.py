@@ -6,14 +6,6 @@
 import random
 import os
 
-ganaste = ['''
-   __ _  __ _ _ __   __ _ ___| |_ ___ 
- / _` |/ _` | '_ \ / _` / __| __/ _ \
-| (_| | (_| | | | | (_| \__ \ ||  __/
- \__, |\__,_|_| |_|\__,_|___/\__\___|
- |___/                               
-''']
-
 IMAGES = ['''           
     +---+
     |   |
@@ -128,7 +120,7 @@ palabra_oculta = ["_"]*len(palabra)
 while True:
     try:
         presentacion()
-        #print(palabra)   #respuesta, comentar o eliminar
+        print(palabra)   #respuesta, comentar o eliminar
         l = input("Ingresa una letra: ")
         verificar(l)
 
@@ -154,7 +146,15 @@ while True:
             break
 
         if mipalabra == palabra :
-            #print(ganaste[0])
+            print("""
+   _____          _   _           _____ _______ ______ 
+  / ____|   /\   | \ | |   /\    / ____|__   __|  ____|
+ | |  __   /  \  |  \| |  /  \  | (___    | |  | |__   
+ | | |_ | / /\ \ | . ` | / /\ \  \___ \   | |  |  __|  
+ | |__| |/ ____ \| |\  |/ ____ \ ____) |  | |  | |____ 
+  \_____/_/    \_\_| \_/_/    \_\_____/   |_|  |______|
+                                                                                                          
+        """)
             print("Felicidades Ganaste!! :D")
             break
 
