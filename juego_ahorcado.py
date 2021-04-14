@@ -120,7 +120,7 @@ palabra_oculta = ["_"]*len(palabra)
 while True:
     try:
         presentacion()
-        print(palabra)   #respuesta, comentar o eliminar
+        #print(palabra)   #respuesta, comentar o eliminar
         l = input("Ingresa una letra: ")
         verificar(l)
 
